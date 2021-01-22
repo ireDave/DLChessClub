@@ -51,7 +51,14 @@ li{
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  display:flex;
 } 
+
+.logo img {
+  max-width: 1.5rem;
+  max-height: auto;
+  filter: invert(1);
+}
 
 video
 {
@@ -94,7 +101,7 @@ video
 }
 
 .text h1 {
-  font-size: 5em;
+  font-size: 4rem;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
@@ -103,7 +110,7 @@ video
 
 .text h2
 {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
@@ -113,14 +120,10 @@ video
 .social {
   position: absolute;
   bottom: 2rem;
+  right: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.con-text{
-  transition: 0.5s;
 }
 
 
