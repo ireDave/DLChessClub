@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+ #navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  z-index: 3;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, .2);
+  height: 2.5rem;
+}
+
+#navbar .nav {
+  margin: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    margin: 0 0.25rem;
+}
+
+.text-primary {
+    color: white;
+}
+
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+} 
+
+video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0707078a;
+  mix-blend-mode: overlay;
+}
+
+
+.showcase
+{
+  padding-top: 5rem;
+  padding-left: 5rem;
+  position: absolute;
+  transition: 0.5s;
+  min-height: calc(100vh - 2.5rem);
+  width: 100%;
+} 
+ 
+
+.text {
+  color: white;
+  position: relative;
+  z-index: 10;
+  margin-top: 8rem;
+}
+
+.text h1 {
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h2
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.social {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.con-text{
+  transition: 0.5s;
+}
+
+
+
+.text p {
+  width: 70%;
+}
+
+
+.social li{
+  list-style-type: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  transform: scale(0.4);
+  transition: 0.5s;
+}
+
+.social li a:hover{
+  transform: scale(0.8) translateY(-2rem);
+} 
+
+@media only screen and (max-width: 600px) {
+  .showcase .text h1{
+    font-size: 1rem;
+  }
+  .showcase .text h2{
+    font-size: 0.75rem;
+  }
+  
+  #navbar {
+  height: 1.75rem;
+  }
+
+  #navbar .nav {
+    margin: 0 0.8rem;
+  
+  }
+
+  #navbar .nav span {
+  font-size: 0.75rem;
+  }
+}
