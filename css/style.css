@@ -19,11 +19,8 @@ li{
   position: sticky;
   top: 0;
   left: 0;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
   z-index: 3;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, .2);
-  height: 2.5rem;
 }
 
 #navbar .nav {
@@ -49,16 +46,21 @@ li{
 }
 
 .logo {
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
+  padding: 0.5rem 0 0.5rem 0;
   display:flex;
 } 
 
 .logo img {
-  max-width: 1.5rem;
-  max-height: auto;
+  max-width: 1rem;
+  max-height: 1rem;
   filter: invert(1);
+  cursor: pointer;
+}
+
+.logo span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 video
