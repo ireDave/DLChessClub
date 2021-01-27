@@ -4,56 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dun Laoghaire Chess Club</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width 768px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and (min-width 1100px)"" href=" css/widescreen.css">
 </head>
 
 <body>
+    <div class="showcase">
+        <video muted loop autoplay>
+            <source src="img/CB.mp4" type="video/mp4">
+            <source src="img/CB.webm" type="video/webm">
+        </video>
+        <div class="overlay"></div>
 
-    <nav id="navbar" role="navigation" aria-label="navigation">
+        <!-- Navbar -->
+
         <div class="nav">
-
-
-            <div class="logo"> <img src="img/rook.svg" alt="" srcset=""> <span> Dun Laoghaire Chess Club</span></div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
+            <h1 class="logo"> <img src="img/rook.svg" alt="" srcset=""> <span>Dun Laoghaire Chess Club</span></h1>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="index2.html">Home</a></li>
                     <li><a href="#">News</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
-                <input type="checkbox" class="toggler">
-                <div class="hamburger">
-                    <div></div>
-                </div>
+            </nav>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-
         </div>
-    </nav>
-    <video muted loop autoplay>
-        <source src="img/CB.mp4" type="video/mp4">
-        <source src="img/CB.webm" type="video/webm">
-    </video>
-    <div class="overlay"></div>
-
-    <div class="showcase">
         <div class="text">
-            <h2>Welcome To </h2>
-            <h1>Dun Laoghaire Chess Club</h1>
-            <p></p>
-
-
+            <h1>Welcome To </h1>
+            <h2>Dun Laoghaire Chess Club</h2>
+            <p>Playing and promoting chess in the Dun Laoghaire area since 1974</p>
+            <a href="#">Join Us</a>
         </div>
+
         <ul class="social">
-            <li><a href="https://www.facebook.com/dlchess/"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="https://www.facebook.com/dlchess/"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+            </li>
             <li><a href="https://twitter.com/dlchessclub"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="https://lichess.org/team/dun-laoghaire-chess-club"><img src="img/lichess.png"></a></li>
         </ul>
     </div>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
